@@ -2,9 +2,10 @@ const get = (target) => {
     return document.querySelector(target);
 };
 
-let timerId;
+
 
 const throttle = (callback, time) => {
+    let timerId;
     if(timerId) return;
     return () => { 
         timerId = setTimeout(() => {
