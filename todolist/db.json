@@ -1,24 +1,29 @@
 {
   "todos": [
     {
-      "content": "할 일 1",
+      "content": "캔, 플라스틱, 유리 분리수거하기",
       "completed": false,
       "id": 1
     },
     {
-      "content": "할 일 2",
-      "completed": false,
+      "content": "장보기 - 달걀, 소시지, 김치 추가",
+      "completed": true,
       "id": 2
     },
     {
-      "content": "할 일 3",
-      "completed": false,
+      "content": "Typescript , react 강의 듣기",
+      "completed": true,
       "id": 3
     },
     {
-      "content": "할 일 4",
+      "content": "청소하기",
+      "completed": true,
+      "id": 6
+    },
+    {
+      "content": "바나나 구입하기",
       "completed": false,
-      "id": 4
+      "id": 7
     }
   ]
 }

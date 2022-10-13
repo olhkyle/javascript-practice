@@ -101,7 +101,8 @@ const changeEditMode = (e) => {
     const $item = e.target.closest('.item');
     const $label = $item.querySelector('label');
     const $inputEl = $item.querySelector('.todo-input');
-    const $fixBtn = get('.fix-btn');
+    const $fixBtn = $item.querySelector('.fix-btn');
+    console.log($fixBtn);
     const newValue = $inputEl.value;
     const doEdit = () => {
         $fixBtn.querySelector('i:first-child').style.display = 'none';
@@ -147,7 +148,7 @@ const editTodo = (e) => {
 }
 
 const deleteTodo = (e) => {
-    if(e.target.className === 'delete-btn'){{
+    if(e.target.className === 'delete-btn' || e.target.matches('.delete-btn i')){{
         const $item = e.target.closest('.item');
         const id = $item.dataset.id;
         fetch(`${API_URL}/${id}`, {
@@ -198,6 +199,7 @@ const init = () => {
         getTodos();
     })
     currentTodosLength();
+    $input.focus();
     $form.addEventListener('submit', addTodo);
     $todos.addEventListener('click', toggleTodo);
     $todos.addEventListener('click', changeEditMode);
