@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "content": "할 일 1",
+      "completed": false,
+      "id": 1
+    },
+    {
+      "content": "할 일 2",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "content": "할 일 3",
+      "completed": false,
+      "id": 3
+    },
+    {
+      "content": "할 일 4",
+      "completed": false,
+      "id": 4
+    }
+  ]
+}

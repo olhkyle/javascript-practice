@@ -13,18 +13,21 @@
 </head>
 <body>
     <div id="root">
-        <h1 class="title">Plans</h1>
+        <div class="title-wrapper">
+            <h1 class="title">Plans</h1>
+            <span class="count">Total : </span>
+        </div>
         <div class="todo-container">
-            <div class="todo-nav">
+            <form class="todo-nav">
                 <input type="text" 
                 placeholder="type something to do !">
                 <button type="submit">
                     <i class="fa-regular fa-square-plus"></i>
                 </button>
-            </div>
+            </form>
 
             <div class="todo-list-wrapper">
-                <div class="todo">
+                <!-- <div class="todo">
                     <div class="input-group">
                         <input type="checkbox">
                         <input type="text">
@@ -34,7 +37,7 @@
                         <button type="button">fix</button>
                         <button type="button">delete</button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
