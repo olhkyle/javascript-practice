@@ -1,0 +1,105 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    border: 0;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper{
+    padding: 20px;
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.title{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.editor-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 30px;
+    /* border: 1px solid black; */
+}
+
+.editor-buttons button{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.5rem;
+}
+
+.editor-buttons button:hover{
+    color: #fff;
+    background-color: #12b866;
+}
+
+.editor{
+    display: none;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 400px;
+    border: 1px solid #e5e5e5;
+    overflow-y: scroll;
+}
+
+.editor:focus,
+.editor:active{
+    outline: 1px solid black;
+}
+
+.show {
+    display: block;
+}
+
+.show-content-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.show-content-buttons button{
+    padding: 10px 0;
+    width: 48%;
+    border-radius: 0.5rem;
+    font-size: 1.05rem;
+    color: #fff;
+}
+
+.show-edit-button{
+    background-color: #12b866;
+}
+
+.show-html-button{
+    background-color: #408563;
+}
+
+.show-content-buttons button:hover{
+    opacity: 0.8;
+}
